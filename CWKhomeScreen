@@ -1,0 +1,22 @@
+
+import csv
+from inspect import getfile
+import runpy
+import pandas as pd
+print("Welcome to Malware Detection Statistics")
+print("This will provide an indepth overview")
+print("On how different malware attack!!")
+
+while True:
+    uInput = input("Enter Dataset Screen : Press 1")
+    if uInput == 1:
+        getfile = ('C:\Users\Custom PC\COMP4216-927100\dataset_Details')
+        print(getfile)
+        break
+    else:
+        print("Wrong Input")
+        break
+
+
+
+

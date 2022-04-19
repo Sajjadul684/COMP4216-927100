@@ -1,0 +1,7 @@
+import csv
+import pandas as pd
+
+print("This screen shows all dataset")
+
+data = pd.read_csv("D:\csv\Dataset Details.CSV") #this reads and outputs csv file
+print(data)

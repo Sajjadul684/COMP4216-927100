@@ -1,0 +1,10 @@
+import csv
+import pandas as pd
+
+print("Welcome to Ardware Screen")
+print("This will show the family used as well as")
+print("numbers of samples taken from corresponding")
+print("family")
+
+data1 = pd.read_csv("C:\csv\hardware.CSV")
+print(data1)

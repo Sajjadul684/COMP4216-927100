@@ -1,0 +1,10 @@
+import csv
+import pandas as pd
+
+print("Welcome to trojan-Sms")
+print("This will show the family used as well as")
+print("numbers of samples taken from corresponding")
+print("family")
+
+data11 = pd.read_csv("C:\csv\Trojan-Sms.CSV")
+print(data11)

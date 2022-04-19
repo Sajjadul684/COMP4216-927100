@@ -1,0 +1,10 @@
+import csv
+import pandas as pd
+
+print("Welcome to Riskware")
+print("This will show the family used as well as")
+print("numbers of samples taken from corresponding")
+print("family")
+
+data6 = pd.read_csv("C:\csv\Riskware.CSV")
+print(data6)
