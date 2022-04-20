@@ -4,58 +4,68 @@ import pandas as pd
 print("Welcome to Malware Detection Statistics")
 print("This will provide an indepth overview")
 print("On how different malware attack!!")
+uInputS = ""
 
-while True:
-    uInput = input("Enter Dataset Screen [1]")
-    if uInput == 1:
-        print("Wrong Input")
-        break
-    else:
-        while True:
+uInput1 = int(input("Enter Dataset Screen [1]"))
+if uInput1 == 1:
+    while uInput1 == 1:
             dd =  pd.read_csv("C:\csv\Dataset Details.CSV")
             print(dd)
-
-            print("If you would like to see an in depth review of")
-            print("a specific category please input name")
-        
-            uInput = input("Example 'Backdoor', File Injector' (CASE SENSITIVE)")
+            print("If you would like to see the mean of samples taken from an attack")
+            uInputS = str(input("Input [Y] if not [N]"))
+            if uInputS == "Y":
+                m = dd["Number Of Samples"]
+                print(m.mean())
+                break
+            elif uInputS == "N":
+                print("If you would like to see an in depth review of")
+                print("a specific category please input name")              
+                uInput = str(input("Example 'Backdoor', File Injector' (CASE SENSITIVE)"))
             if uInput == ("Hardware Details"):
-                hd = pd.read_csv("C:\csv\hardware.CSV")
-                print(hd)
+                while uInput == "Hardware Details":
+                    hd = pd.read_csv("C:\csv\hardware.CSV")
+                    print(hd)
+                    print("If you would like to see the mean of samples taken from an attack")
+                    uInputS1 = str(input("Input [Y] if not [N]"))
+                    if uInputS1 == "Y":
+                        mdd = hd["Number Of Captured Samples"]
+                        print(mdd.mean())
+                        break
             elif uInput == "File Injector":
-                fi = pd.read_csv("C:\csv\File Injector.CSV")
-                print(fi)
+                        fi = pd.read_csv("C:\csv\File Injector.CSV")
+                        print(fi)
             elif uInput == "PUA":
-                pua = pd.read_csv("C:\csv\PUA.CSV")
-                print(pua)
+                        pua = pd.read_csv("C:\csv\PUA.CSV")
+                        print(pua)
             elif uInput == "Ransomware":
-                rw = pd.read_csv("C:\csv\Ransomware.CSV")
-                print(rw)
+                        rw = pd.read_csv("C:\csv\Ransomware.CSV")
+                        print(rw)
             elif uInput == "Riskware":
-                rw2 = pd.read_csv("C:\csv\Riskware.CSV")
-                print(rw2)
+                        rw2 = pd.read_csv("C:\csv\Riskware.CSV")
+                        print(rw2)
             elif uInput == "PUA":
-                pua = pd.read_csv("C:\csv\Scareware.CSV")
-                print(pua)
+                        pua = pd.read_csv("C:\csv\Scareware.CSV")
+                        print(pua)
             elif uInput == "Trojan":
-                t = pd.read_csv("C:\csv\Trojan.CSV")
-                print(t)
+                        t = pd.read_csv("C:\csv\Trojan.CSV")
+                        print(t)
             elif uInput == "Trojan-Banker":
-                tb = pd.read_csv("C:\csv\Trojan-Banker.CSV")
-                print(tb)
+                        tb = pd.read_csv("C:\csv\Trojan-Banker.CSV")
+                        print(tb)
             elif uInput == "Trojan-Dropper":
-                td = pd.read_csv("C:\csv\Trojan-Dropper.CSV")
-                print(td)
+                        td = pd.read_csv("C:\csv\Trojan-Dropper.CSV")
+                        print(td)
             elif uInput == "Trojan-Sms":
-                tsms = pd.read_csv("C:\csv\Trojan-Sms.CSV")
-                print(tsms)
+                        tsms = pd.read_csv("C:\csv\Trojan-Sms.CSV")
+                        print(tsms)
             elif uInput == "Trojan-Spy":
-                tspy = pd.read_csv("C:\csv\Trojan-Spy.CSV")
-                print(tspy)
+                        tspy = pd.read_csv("C:\csv\Trojan-Spy.CSV")
+                        print(tspy)
             elif uInput == "Backdoor":
-                bd = pd.read_csv("C:\csv\Backdoor.CSV")
-                print(bd)
-        
+                        bd = pd.read_csv("C:\csv\Backdoor.CSV")
+                        print(bd)   
             else:
-                print("Wrong Input")
-            break
+             print("Wrong Input")
+    breakpoint
+else:
+    print("WrongInput2")
