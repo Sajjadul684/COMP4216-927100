@@ -25,11 +25,18 @@ if uInput1 == 1:
                 while uInput == "Hardware Details":
                     hd = pd.read_csv("C:\csv\hardware.CSV")
                     print(hd)
-                    print("If you would like to see the mean of samples taken from an attack")
+                    print("If you would like to see the mean of samples taken from the malware")
                     uInputS1 = str(input("Input [Y] if not [N]"))
                     if uInputS1 == "Y":
                         mdd = hd["Number Of Captured Samples"]
                         print(mdd.mean())
+                        uInputX = str(input("Exit Screen [X]"))
+                        while uInputX == "X":
+                            print("Exiting Screen")
+                            break
+                        break
+                    elif uInputS1 == "N":
+                        print("Going back to dataset screen")
                         break
             elif uInput == "File Injector":
                         fi = pd.read_csv("C:\csv\File Injector.CSV")
