@@ -51,6 +51,9 @@ if uInput1 == 1:
                             while uInputX == "X":
                                 print("Exiting Screen")
                                 break
+                        elif uInputS2 == "N":
+                            print("Going back to dataset screen")
+                            break
                         break
             elif uInput == "PUA":
                 while uInput == "PUA":
@@ -65,6 +68,9 @@ if uInput1 == 1:
                             while uInputX == "X":
                                 print("Exiting Screen")
                                 break
+                        elif uInputS3 == "N":
+                            print("Going back to dataset screen")
+                            break
                         break
             elif uInput == "Ransomware":
                 while uInput == "Ransomware":
@@ -79,6 +85,9 @@ if uInput1 == 1:
                             while uInputX == "X":
                                 print("Exiting Screen")
                                 break
+                        elif uInputS4 == "N":
+                            print("Going back to dataset screen")
+                            break
                         break
             elif uInput == "Riskware":
                 while uInput == "Riskware":
@@ -93,6 +102,9 @@ if uInput1 == 1:
                             while uInputX == "X":
                                 print("Exiting Screen")
                                 break
+                        elif uInputS5 == "N":
+                            print("Going back to dataset screen")
+                            break
                         break
             elif uInput == "Scareware":
                 while uInput == "Scareware":
@@ -101,12 +113,15 @@ if uInput1 == 1:
                         print("If you would like to see the mean of samples taken from the malware")
                         uInputS6 = str(input("Input [Y] if not [N]"))
                         if uInputS6 == "Y":
-                            msw = sw["Number Of Samples"]
+                            msw = sw["Number Of Captured Samples"]
                             print(msw.mean())
                             uInputX = str(input("Exit Screen [X]"))
                             while uInputX == "X":
                                 print("Exiting Screen")
                                 break
+                        elif uInputS6 == "N":
+                            print("Going back to dataset screen")
+                            break
                         break
             elif uInput == "Trojan":
                 while uInput == "Trojan":
@@ -115,12 +130,15 @@ if uInput1 == 1:
                         print("If you would like to see the mean of samples taken from the malware")
                         uInputS7 = str(input("Input [Y] if not [N]"))
                         if uInputS7 == "Y":
-                            mt = t["Number Of Samples"]
+                            mt = t["Number Of Captured Samples"]
                             print(mt.mean())
                             uInputX = str(input("Exit Screen [X]"))
                             while uInputX == "X":
                                 print("Exiting Screen")
                                 break
+                        elif uInputS7 == "N":
+                            print("Going back to dataset screen")
+                            break    
                         break
             elif uInput == "Trojan-Banker":
                 while uInput == "Trojan-Banker":
@@ -129,12 +147,16 @@ if uInput1 == 1:
                         print("If you would like to see the mean of samples taken from the malware")
                         uInputS8 = str(input("Input [Y] if not [N]"))
                         if uInputS8 == "Y":
-                            mtb = tb["Number Of Samples"]
+                            mtb = tb["Number Of Captured Samples"]
                             print(mtb.mean())
                             uInputX = str(input("Exit Screen [X]"))
                             while uInputX == "X":
                                 print("Exiting Screen")
                                 break
+                        elif uInputS8 == "N":
+                            print("Going back to dataset screen")
+                            break
+                        break
             elif uInput == "Trojan-Dropper":
                 while uInput == "Trojan-Dropper":
                         td = pd.read_csv("C:\csv\Trojan-Dropper.CSV")
@@ -142,12 +164,16 @@ if uInput1 == 1:
                         print("If you would like to see the mean of samples taken from the malware")
                         uInputS9 = str(input("Input [Y] if not [N]"))
                         if uInputS9 == "Y":
-                            mtd = td["Number Of Samples"]
+                            mtd = td["Number Of Captured Samples"]
                             print(mtd.mean())
                             uInputX = str(input("Exit Screen [X]"))
                             while uInputX == "X":
                                 print("Exiting Screen")
                                 break
+                        elif uInputS1 == "N":
+                            print("Going back to dataset screen")
+                            break
+                        break
             elif uInput == "Trojan-Sms":
                 while uInput == "Trojan-Sms":
                         tsms = pd.read_csv("C:\csv\Trojan-Sms.CSV")
@@ -155,12 +181,16 @@ if uInput1 == 1:
                         print("If you would like to see the mean of samples taken from the malware")
                         uInputS10 = str(input("Input [Y] if not [N]"))
                         if uInputS10 == "Y":
-                            mtsms = tsms["Number Of Samples"]
+                            mtsms = tsms["Number Of Captured Samples"]
                             print(mtsms.mean())
                             uInputX = str(input("Exit Screen [X]"))
                             while uInputX == "X":
                                 print("Exiting Screen")
                                 break
+                        elif uInputS10 == "N":
+                            print("Going back to dataset screen")
+                            break
+                        break
             elif uInput == "Trojan-Spy":
                 while uInput == "Trojan-Spy":
                         tspy = pd.read_csv("C:\csv\Trojan-Spy.CSV")
@@ -168,12 +198,16 @@ if uInput1 == 1:
                         print("If you would like to see the mean of samples taken from the malware")
                         uInputS11 = str(input("Input [Y] if not [N]"))
                         if uInputS11 == "Y":
-                            mtspy = tspy["Number Of Samples"]
+                            mtspy = tspy["Number Of Captured Samples"]
                             print(mtspy.mean())
                             uInputX = str(input("Exit Screen [X]"))
                             while uInputX == "X":
                                 print("Exiting Screen")
                                 break
+                        elif uInputS11 == "N":
+                            print("Going back to dataset screen")
+                            break
+                        break
             elif uInput == "Backdoor":
                 while uInput == "Backdoor":
                         bd = pd.read_csv("C:\csv\Backdoor.CSV")
@@ -181,12 +215,16 @@ if uInput1 == 1:
                         print("If you would like to see the mean of samples taken from the malware")
                         uInputS12 = str(input("Input [Y] if not [N]"))
                         if uInputS12 == "Y":
-                            mbd = bd["Number Of Samples"]
+                            mbd = bd["Number Of Captured Samples"]
                             print(mbd.mean())
                             uInputX = str(input("Exit Screen [X]"))
                             while uInputX == "X":
                                 print("Exiting Screen")
                                 break
+                        elif uInputS12 == "N":
+                            print("Going back to dataset screen")
+                            break
+                        break
             else:
              print("Wrong Input")
     breakpoint
