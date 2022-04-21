@@ -27,7 +27,7 @@ if uInput1 == 1:
                     print(hd)
                     print("If you would like to see the mean of samples taken from the malware")
                     print("Or if you would like to select a specific Serial Number")
-                    uInputS1 = str(input("Input [Y] if not [N] or Sr. No [S]"))
+                    uInputS1 = str(input("Input [Y] if not [N] or Sr. No [S]: "))
                     if uInputS1 == "Y":
                         mdd = hd["Number Of Captured Samples"]
                         print(mdd.mean())
@@ -39,57 +39,56 @@ if uInput1 == 1:
                     elif uInputS1 == "N":
                         print("Going back to dataset screen")
                         break
-                             elif uInputS2 == "S":
-                            while uInputS2 =="S":
-                                sr1 = fi.loc[0]
-                                sr2 = fi.loc[1]
-                                sr3 = fi.loc[2]
-                                sr4 = fi.loc[3]
-                                sr5 = fi.loc[5]
-                                sr6 = fi.loc[6]
-                                sr7 = fi.loc[7]
-                                sr8 = fi.loc[8]
-                                sr9 = fi.loc[9]
-                                sr10 = fi.loc[10]
-                                sr11 = fi.loc[11]
-                                sr12 = fi.loc[12]
-                                sr13 = fi.loc[13]
-                                sr14 = fi.loc[14]
-                                sr15 = fi.loc[15]
-                                sr16 = fi.loc[16]
-                                sr17 = fi.loc[17]
-                                sr18 = fi.loc[18]
-                                sr19 = fi.loc[19]
-                                sr20 = fi.loc[20]
-                                sr21 = fi.loc[21]
-                                sr22 = fi.loc[22]
-                                sr23 = fi.loc[23]
-                                sr24 = fi.loc[24]
-                                sr25 = fi.loc[25]
-                                sr26 = fi.loc[26]
-                                sr27 = fi.loc[27]
-                                sr28 = fi.loc[28]
-                                sr29 = fi.loc[29]
-                                sr30 = fi.loc[30]
-                                sr31 = fi.loc[31]
-                                sr32 = fi.loc[32]
-                                sr33 = fi.loc[33]
-                                sr34 = fi.loc[34]
-                                sr35 = fi.loc[35]
-                                sr36 = fi.loc[36]
-                                sr37 = fi.loc[37]
-                                sr38 = fi.loc[38]
-                                sr39 = fi.loc[39]
-                                sr40 = fi.loc[40]
-                                sr41 = fi.loc[41]
-                                sr42 = fi.loc[42]
-                                sr43 = fi.loc[43]
-                                sr44 = fi.loc[44]
-                                sr45 = fi.loc[45]
-                                sr46 = fi.loc[46]
-                                sr47 = fi.loc[47]
-                                sr48 = fi.loc[48]
-                                srInput= int(input("Please Input Serial Number 1-48"))
+                    elif uInputS1 == "S":
+                            while uInputS1 =="S":
+                                sr1 = hd.loc[0]
+                                sr2 = hd.loc[1]
+                                sr3 = hd.loc[2]
+                                sr4 = hd.loc[3]
+                                sr5 = hd.loc[5]
+                                sr6 = hd.loc[6]
+                                sr7 = hd.loc[7]
+                                sr8 = hd.loc[8]
+                                sr9 = hd.loc[9]
+                                sr10 = hd.loc[10]
+                                sr11 = hd.loc[11]
+                                sr12 = hd.loc[12]
+                                sr13 = hd.loc[13]
+                                sr14 = hd.loc[14]
+                                sr15 = hd.loc[15]
+                                sr16 = hd.loc[16]
+                                sr17 = hd.loc[17]
+                                sr18 = hd.loc[18]
+                                sr19 = hd.loc[19]
+                                sr20 = hd.loc[20]
+                                sr21 = hd.loc[21]
+                                sr22 = hd.loc[22]
+                                sr23 = hd.loc[23]
+                                sr24 = hd.loc[24]
+                                sr25 = hd.loc[25]
+                                sr26 = hd.loc[26]
+                                sr27 = hd.loc[27]
+                                sr28 = hd.loc[28]
+                                sr29 = hd.loc[29]
+                                sr30 = hd.loc[30]
+                                sr31 = hd.loc[31]
+                                sr32 = hd.loc[32]
+                                sr33 = hd.loc[33]
+                                sr34 = hd.loc[34]
+                                sr35 = hd.loc[35]
+                                sr36 = hd.loc[36]
+                                sr37 = hd.loc[37]
+                                sr38 = hd.loc[38]
+                                sr39 = hd.loc[39]
+                                sr40 = hd.loc[40]
+                                sr41 = hd.loc[41]
+                                sr42 = hd.loc[42]
+                                sr43 = hd.loc[43]
+                                sr44 = hd.loc[44]
+                                sr45 = hd.loc[45]
+                                sr46 = hd.loc[46]
+                                sr47 = hd.loc[47]
+                                srInput= int(input("Please Input Serial Number 1-48: "))
                                 if srInput == 1:
                                     print(sr1)
                                     uInputX = str(input("Exit Screen [X]"))
@@ -419,15 +418,6 @@ if uInput1 == 1:
                                         print("Exiting Screen")
                                         break        
                                     break
-                                elif srInput == 48:
-                                    print(sr48)
-                                    uInputX = str(input("Exit Screen [X]"))
-                                    while uInputX == "X":
-                                        print("Exiting Screen")
-                                        break        
-                                    break
-                                
-                                break
 
             elif uInput == "File Injector":
                 while uInput == "File Injector":
@@ -511,15 +501,15 @@ if uInput1 == 1:
                             print("Going back to dataset screen")
                             break
                         elif uInputS3 == "S":
-                            while uInputS2 =="S":
-                                sr1 = fi.loc[0]
-                                sr2 = fi.loc[1]
-                                sr3 = fi.loc[2]
-                                sr4 = fi.loc[3]
-                                sr5 = fi.loc[4]
-                                sr6 = fi.loc[5]
-                                sr7 = fi.loc[6]
-                                sr8 = fi.loc[7]
+                            while uInputS3 =="S":
+                                sr1 = pua.loc[0]
+                                sr2 = pua.loc[1]
+                                sr3 = pua.loc[2]
+                                sr4 = pua.loc[3]
+                                sr5 = pua.loc[4]
+                                sr6 = pua.loc[5]
+                                sr7 = pua.loc[6]
+                                sr8 = pua.loc[7]
                                 srInput= int(input("Please Input Serial Number 1-8"))
                                 if srInput == 1:
                                     print(sr1)
@@ -582,8 +572,8 @@ if uInput1 == 1:
                 while uInput == "Ransomware":
                         rw = pd.read_csv("C:\csv\Ransomware.CSV")
                         print(rw)
-                        print("If you would like to see the mean of samples taken from the malware")
-                        uInputS4 = str(input("Input [Y] if not [N]"))
+                        print("Or if you would like to select a specific Serial Number")
+                        uInputS4 = str(input("Input [Y] if not [N] or Sr No. [S]"))
                         if uInputS4 == "Y":
                             mrw = rw["Number Of Captured Samples"]
                             print(mrw.mean())
@@ -594,13 +584,82 @@ if uInput1 == 1:
                         elif uInputS4 == "N":
                             print("Going back to dataset screen")
                             break
+                        elif uInputS4 == "S":
+                            while uInputS4 =="S":
+                                sr1 = rw.loc[0]
+                                sr2 = rw.loc[1]
+                                sr3 = rw.loc[2]
+                                sr4 = rw.loc[3]
+                                sr5 = rw.loc[4]
+                                sr6 = rw.loc[5]
+                                sr7 = rw.loc[6]
+                                sr8 = rw.loc[7]
+                                srInput= int(input("Please Input Serial Number 1-8: "))
+                                if srInput == 1:
+                                    print(sr1)
+                                    uInputX = str(input("Exit Screen [X]"))
+                                    while uInputX == "X":
+                                        print("Exiting Screen")
+                                        break        
+                                    break
+                                elif srInput == 2:
+                                    print(sr2)
+                                    uInputX = str(input("Exit Screen [X]"))
+                                    while uInputX == "X":
+                                        print("Exiting Screen")
+                                        break        
+                                    break
+                                elif srInput == 3:
+                                    print(sr3)
+                                    uInputX = str(input("Exit Screen [X]"))
+                                    while uInputX == "X":
+                                        print("Exiting Screen")
+                                        break        
+                                    break
+                                elif srInput == 4:
+                                    print(sr4)
+                                    uInputX = str(input("Exit Screen [X]"))
+                                    while uInputX == "X":
+                                        print("Exiting Screen")
+                                        break        
+                                    break
+                                elif srInput == 5:
+                                    print(sr5)
+                                    uInputX = str(input("Exit Screen [X]"))
+                                    while uInputX == "X":
+                                        print("Exiting Screen")
+                                        break        
+                                    break
+                                elif srInput == 6:
+                                    print(sr6)
+                                    uInputX = str(input("Exit Screen [X]"))
+                                    while uInputX == "X":
+                                        print("Exiting Screen")
+                                        break        
+                                    break
+                                elif srInput == 7:
+                                    print(sr7)
+                                    uInputX = str(input("Exit Screen [X]"))
+                                    while uInputX == "X":
+                                        print("Exiting Screen")
+                                        break        
+                                    break
+                                elif srInput == 8:
+                                    print(sr8)
+                                    uInputX = str(input("Exit Screen [X]"))
+                                    while uInputX == "X":
+                                        print("Exiting Screen")
+                                        break        
+                                    break
+                                break
                         break
             elif uInput == "Riskware":
                 while uInput == "Riskware":
                         rw2 = pd.read_csv("C:\csv\Riskware.CSV")
                         print(rw2)
                         print("If you would like to see the mean of samples taken from the malware")
-                        uInputS5 = str(input("Input [Y] if not [N]"))
+                        print("or a specific serial number")
+                        uInputS5 = str(input("Input [Y] if not [N] or Sr. No [S]: "))
                         if uInputS5 == "Y":
                             mrw2 = rw2["Number Of Samples"]
                             print(mrw2.mean())
@@ -611,6 +670,164 @@ if uInput1 == 1:
                         elif uInputS5 == "N":
                             print("Going back to dataset screen")
                             break
+                        elif uInputS5 == "S":
+                            while uInputS5 =="S":
+                                sr1 = rw2.loc[0]
+                                sr2 = rw2.loc[1]
+                                sr3 = rw2.loc[2]
+                                sr4 = rw2.loc[3]
+                                sr5 = rw2.loc[4]
+                                sr6 = rw2.loc[5]
+                                sr7 = rw2.loc[6]
+                                sr8 = rw2.loc[7]
+                                sr9 = rw2.loc[8]
+                                sr10 = rw2.loc[9]
+                                sr11 = rw2.loc[10]
+                                sr12 = rw2.loc[11]
+                                sr13 = rw2.loc[12]
+                                sr14 = rw2.loc[13]
+                                sr15 = rw2.loc[14]
+                                sr16 = rw2.loc[15]
+                                sr17 = rw2.loc[16]
+                                sr18 = rw2.loc[17]
+                                sr19 = rw2.loc[18]
+                                sr20 = rw2.loc[19]
+                                sr21 = rw2.loc[20]
+                                srInput= int(input("Please Input Serial Number 1-21: "))
+                                if srInput == 1:
+                                    print(sr1)
+                                    uInputX = str(input("Exit Screen [X]"))
+                                    while uInputX == "X":
+                                        print("Exiting Screen")
+                                        break        
+                                    break
+                                elif srInput == 2:
+                                    print(sr2)
+                                    uInputX = str(input("Exit Screen [X]"))
+                                    while uInputX == "X":
+                                        print("Exiting Screen")
+                                        break        
+                                    break
+                                elif srInput == 3:
+                                    print(sr3)
+                                    uInputX = str(input("Exit Screen [X]"))
+                                    while uInputX == "X":
+                                        print("Exiting Screen")
+                                        break        
+                                    break
+                                elif srInput == 4:
+                                    print(sr4)
+                                    uInputX = str(input("Exit Screen [X]"))
+                                    while uInputX == "X":
+                                        print("Exiting Screen")
+                                        break        
+                                    break
+                                elif srInput == 5:
+                                    print(sr5)
+                                    uInputX = str(input("Exit Screen [X]"))
+                                    while uInputX == "X":
+                                        print("Exiting Screen")
+                                        break        
+                                    break
+                                elif srInput == 6:
+                                    print(sr6)
+                                    uInputX = str(input("Exit Screen [X]"))
+                                    while uInputX == "X":
+                                        print("Exiting Screen")
+                                        break        
+                                    break
+                                elif srInput == 7:
+                                    print(sr7)
+                                    uInputX = str(input("Exit Screen [X]"))
+                                    while uInputX == "X":
+                                        print("Exiting Screen")
+                                        break        
+                                    break
+                                elif srInput == 9:
+                                    print(sr9)
+                                    uInputX = str(input("Exit Screen [X]"))
+                                    while uInputX == "X":
+                                        print("Exiting Screen")
+                                        break        
+                                    break
+                                elif srInput == 10:
+                                    print(sr10)
+                                    uInputX = str(input("Exit Screen [X]"))
+                                    while uInputX == "X":
+                                        print("Exiting Screen")
+                                        break        
+                                    break
+                                elif srInput == 11:
+                                    print(sr11)
+                                    uInputX = str(input("Exit Screen [X]"))
+                                    while uInputX == "X":
+                                        print("Exiting Screen")
+                                        break        
+                                    break
+                                elif srInput == 12:
+                                    print(sr12)
+                                    uInputX = str(input("Exit Screen [X]"))
+                                    while uInputX == "X":
+                                        print("Exiting Screen")
+                                        break        
+                                    break
+                                elif srInput == 13:
+                                    print(sr13)
+                                    uInputX = str(input("Exit Screen [X]"))
+                                    while uInputX == "X":
+                                        print("Exiting Screen")
+                                        break        
+                                    break
+                                elif srInput == 14:
+                                    print(sr14)
+                                    uInputX = str(input("Exit Screen [X]"))
+                                    while uInputX == "X":
+                                        print("Exiting Screen")
+                                        break        
+                                    break
+                                elif srInput == 15:
+                                    print(sr15)
+                                    uInputX = str(input("Exit Screen [X]"))
+                                    while uInputX == "X":
+                                        print("Exiting Screen")
+                                        break        
+                                    break
+                                elif srInput == 16:
+                                    print(sr16)
+                                    uInputX = str(input("Exit Screen [X]"))
+                                    while uInputX == "X":
+                                        print("Exiting Screen")
+                                        break        
+                                    break
+                                elif srInput == 17:
+                                    print(sr17)
+                                    uInputX = str(input("Exit Screen [X]"))
+                                    while uInputX == "X":
+                                        print("Exiting Screen")
+                                        break        
+                                    break
+                                elif srInput == 18:
+                                    print(sr18)
+                                    uInputX = str(input("Exit Screen [X]"))
+                                    while uInputX == "X":
+                                        print("Exiting Screen")
+                                        break        
+                                    break
+                                elif srInput == 19:
+                                    print(sr19)
+                                    uInputX = str(input("Exit Screen [X]"))
+                                    while uInputX == "X":
+                                        print("Exiting Screen")
+                                        break        
+                                    break
+                                elif srInput == 20:
+                                    print(sr20)
+                                    uInputX = str(input("Exit Screen [X]"))
+                                    while uInputX == "X":
+                                        print("Exiting Screen")
+                                        break        
+                                    break
+                                break
                         break
             elif uInput == "Scareware":
                 while uInput == "Scareware":
