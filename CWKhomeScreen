@@ -43,7 +43,8 @@ if uInput1 == 1:
                         fi = pd.read_csv("C:\csv\File Injector.CSV")
                         print(fi)
                         print("If you would like to see the mean of samples taken from the malware")
-                        uInputS2 = str(input("Input [Y] if not [N]"))
+                        print("Or if you would like to select a specific Serial Number")
+                        uInputS2 = str(input("Input [Y] if not [N] or serial No [S]"))
                         if uInputS2 == "Y":
                             mfi = fi["Number Of Captured Samples"]
                             print(mfi.mean())
@@ -54,7 +55,37 @@ if uInput1 == 1:
                         elif uInputS2 == "N":
                             print("Going back to dataset screen")
                             break
-                        break
+                        
+                        elif uInputS2 == "S":
+                            while uInputS2 =="S":
+                                sr1 = fi.loc[0]
+                                sr2 = fi.loc[1]
+                                sr3 = fi.loc[2]
+                                sr4 = fi.loc[3]
+                                sr5 = fi.loc[4]
+                                srInput= int(input("Please Input Serial Number 1-5"))
+                                if srInput == 1:
+                                    print(sr1)
+                                    break
+                                elif srInput == 2:
+                                    print(sr2)
+                                    break
+                                elif srInput == 3:
+                                    print(sr3)
+                                    break
+                                elif srInput == 4:
+                                    print(sr4)
+                                    break
+                                elif srInput == 5:
+                                    print(sr5)
+                                    break
+                                uInputX = str(input("Exit Screen [X]"))
+                                while uInputX == "X":
+                                    print("Exiting Screen")
+                                    break
+                                break
+                
+                         
             elif uInput == "PUA":
                 while uInput == "PUA":
                         pua = pd.read_csv("C:\csv\PUA.CSV")
