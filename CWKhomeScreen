@@ -11,23 +11,23 @@ if uInput1 == 1:
     while uInput1 == 1:
             dd =  pd.read_csv("C:\csv\Dataset Details.CSV")
             print(dd)
-            print("If you would like to see the mean of samples taken from an attack")
-            uInputS = str(input("Input [Y] if not [N]"))
+            print("If you would like to see the mean of samples taken from an attack") #This would be the inital home screen so user can see how to spell each category
+            uInputS = str(input("Input [Y] if not [N]")) #This is user choice that allows user to see mean of sample
             if uInputS == "Y":
                 m = dd["Number Of Samples"]
                 print(m.mean())
                 break
             elif uInputS == "N":
-                print("If you would like to see an in depth review of")
+                print("If you would like to see an in depth review of") #if user didn't want to view mean sample they would be sent to this
                 print("a specific category please input name")              
-                uInput = str(input("Example 'Backdoor', File Injector' (CASE SENSITIVE)"))
+                uInput = str(input("Example 'Backdoor', File Injector' (CASE SENSITIVE)")) #Allows user choice to search through categories
             if uInput == ("Hardware Details"):
                 while uInput == "Hardware Details":
                     hd = pd.read_csv("C:\csv\hardware.CSV")
                     print(hd)
                     print("If you would like to see the mean of samples taken from the malware")
-                    print("Or if you would like to select a specific Serial Number")
-                    uInputS1 = str(input("Input [Y] if not [N] or Sr. No [S]: "))
+                    print("Or if you would like to select a specific Serial Number")#if user inputted correctly would output csv file 
+                    uInputS1 = str(input("Input [Y] if not [N] or Sr. No [S]: "))#user choice if they would like to view mean of samples or search a specific serial No. (Choice is done throughout whole program)
                     if uInputS1 == "Y":
                         mdd = hd["Number Of Captured Samples"]
                         print(mdd.mean())
