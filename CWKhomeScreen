@@ -41,7 +41,7 @@ if uInput1 == 1:
                         break
                     elif uInputS1 == "S":
                             while uInputS1 =="S":
-                                sr1 = hd.loc[0]
+                                sr1 = hd.loc[0]#This searches the csv file and extracts the specific row
                                 sr2 = hd.loc[1]
                                 sr3 = hd.loc[2]
                                 sr4 = hd.loc[3]
@@ -91,7 +91,7 @@ if uInput1 == 1:
                                 srInput= int(input("Please Input Serial Number 1-48: "))
                                 if srInput == 1:
                                     print(sr1)
-                                    uInputX = str(input("Exit Screen [X]"))
+                                    uInputX = str(input("Exit Screen [X]")) #This would output the row extracted
                                     while uInputX == "X":
                                         print("Exiting Screen")
                                         break                                    
